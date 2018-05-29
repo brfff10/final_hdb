@@ -43,7 +43,7 @@ class RecordFile extends Component {
     SubmitInfo(){
         var record = this.state.records;
         fetch('http://ec2-18-218-177-24.us-east-2.compute.amazonaws.com:8000/api/patients/1/record/1', {
-            method: 'POST',
+            method: 'PATCH',
             headers: {
               'Accept': 'application/json',
               'Content-Type': 'application/json',
